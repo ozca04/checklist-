@@ -1,3 +1,4 @@
+
 main{
     display: grid;
     grid-template-rows: 2fr 3fr 3fr 1fr;
@@ -21,7 +22,7 @@ main{
     align-items: center;
     justify-content: center;
     background-color: aliceblue;
-    width: clamp(1rem, 15vw, 20rem);
+    width: clamp(1rem, 5vw, 20rem);
     height: 5rem;
 }
 
@@ -31,6 +32,7 @@ main{
     justify-content: center;
     gap: 8rem;
     font-family: 'inter';
+    padding: clamp(2rem, 10vh, 10rem) 0;
 }
 .secondColumn{
     display: flex;
