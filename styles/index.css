@@ -1,0 +1,61 @@
+main{
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr 1fr;
+}
+.first, .third{
+    background-color: var(--colornamelessorange);
+}
+.second, .fourth{
+    background-color: var(--colornamelesslavanta);
+}
+/**/
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'inter';
+    
+}
+.firstColumnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    width: clamp(10rem, 25vw, 200rem);
+    height: 5rem;
+}
+
+/**/
+.second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-family: 'inter';
+}
+.secondColumn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--textColor);
+}
+.secondColumn h2{
+    padding: clamp(1rem, 1vh, 5rem) clamp(4rem, 10vw, 30rem);
+}
+.FirstRow{
+    background-color: var(--dividerColorOne);
+}
+.SecondRow{
+    background-color: var(--dividerColorTree);
+}
+.ThirdRow{
+    background-color: var(--dividerColorTwo);
+}
+.FourthRow{
+    background-color: var(--dividerColorFour);
+}
+.FifthRow{
+    background-color: var(--divideColorFive);
+}
+/**/

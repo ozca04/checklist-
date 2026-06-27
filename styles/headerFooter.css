@@ -8,6 +8,13 @@
     --colornamelessorange: #ffbe98;
     --colornamelessdarkgreen: #7d9b76;
 }
+:root{
+    --dividerColorOne:#3c0000;
+    --dividerColorTree:#960018;
+    --dividerColorTwo:#89a6b8;
+    --dividerColorFour:#e7cb9c;
+    --divideColorFive:#745c4e;
+}
 body{
     display: flex;
     flex-direction: column;
@@ -100,11 +107,11 @@ footer{
 }
 .footerSection3First{
     padding: clamp(3rem, 3vh, 9rem) clamp(3rem, 5vw, 9rem);
-    background-color: var(--colornamelessdarkgreen);
+    background-color: darkred;
 }
 .footerSection3Second{
     padding: clamp(3rem, 3vh, 9rem) clamp(3rem, 5vw, 9rem);
-    background-color: var(--colornamelessorange);
+    background-color: slateblue;
 }
 .footerSection3Third{
     padding: clamp(3rem, 3vh, 9rem) clamp(3rem, 5vw, 9rem);
