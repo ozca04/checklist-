@@ -1,6 +1,6 @@
 main{
     display: grid;
-    grid-template-rows: 2fr 3fr 3fr 1fr;
+    grid-template-rows: 2fr 7fr ;
 }
 .first, .third{
     background-color: var(--colornamelessorange);
@@ -21,26 +21,17 @@ main{
     align-items: center;
     justify-content: center;
     background-color: aliceblue;
-    width: clamp(1rem, 15vw, 20rem);
+    width: clamp(1rem, 40vw, 50rem);
     height: 5rem;
+    border-radius: 25px;
 }
 
 /**/
 .second{
-    display: flex;
-    justify-content: center;
-    gap: 8rem;
-    font-family: 'inter';
+    display: grid;
+    grid-template-columns:3fr 3fr 2fr 2fr 2fr;
 }
-.secondColumn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--textColor);
-}
-.secondColumn h2{
-    padding: clamp(1rem, 1vh, 5rem) clamp(4rem, 1vw, 30rem);
-}
+
 .FirstRow{
     background-color: var(--dividerColorOne);
 }
@@ -57,16 +48,45 @@ main{
     background-color: var(--divideColorFive);
 }
 /**/
-.third{
+.secondColumn{
+    display: grid;
+    grid-template-rows: 2fr 7fr;
+}
+.secondColumn h2{
     display: flex;
     justify-content: center;
-    gap: 4rem;
+    align-items: center;
+    color: var(--textColor);
     font-family: 'inter';
 }
-.subsection{
+.secondColumn h3{
+    font-family: 'inter';
+    color: var(--textColor);
+    transform: rotate(90deg);
+}
+
+.barriersTreepart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: darkgoldenrod;
+}
+
+.barriersTreepart div{
+    border-right: 0.2rem solid black;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-    color: var(--textColor);
+}
+
+
+.barriersTwopart{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: darkgoldenrod;
+}
+.barriersTwopart div{
+    border-right: 0.2rem solid black;
+        display: flex;
+    align-items: center;
+    justify-content: center;
 }
