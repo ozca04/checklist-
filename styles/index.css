@@ -1,6 +1,6 @@
 main{
     display: grid;
-    grid-template-rows: 2fr 7fr ;
+    grid-template-rows: 2fr 7fr;
 }
 .first, .third{
     background-color: var(--colornamelessorange);
@@ -50,7 +50,7 @@ main{
 /**/
 .secondColumn{
     display: grid;
-    grid-template-rows: 2fr 7fr;
+    grid-template-rows: 2fr 6fr;
 }
 .secondColumn h2{
     display: flex;
@@ -64,25 +64,21 @@ main{
     color: var(--textColor);
     transform: rotate(90deg);
 }
-
 .barriersTreepart{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: darkgoldenrod;
 }
-
+.barriersTwopart{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: darkgoldenrod;
+}
 .barriersTreepart div{
     border-right: 0.2rem solid black;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-.barriersTwopart{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: darkgoldenrod;
 }
 .barriersTwopart div{
     border-right: 0.2rem solid black;
@@ -90,3 +86,4 @@ main{
     align-items: center;
     justify-content: center;
 }
+/**/
