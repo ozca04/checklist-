@@ -1,6 +1,7 @@
 body{
     font-family: 'inter';
     color: var(--textColor);
+    background-color: var(--dividerColorTwo);
 }
 .container-part{
     display: flex;
@@ -15,7 +16,6 @@ body{
 section{
     display: grid;
     grid-template-rows: 1fr 5fr;
-    background-color: var(--divideColorFive);
 }
 .box{
     display: grid;
@@ -23,7 +23,6 @@ section{
 /**/
 .treepart{
     grid-template-columns: 1fr 1fr 1fr;
-    border:  0.2rem solid #7d9b76;   
 }
 .treepartone{
     display: grid;
@@ -32,11 +31,12 @@ section{
 .container-for-fourpart{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;  
 }
 .foursection{
     align-items: center;
     justify-content: center;
+    border:  0.2rem solid seagreen;  
 }
 /**/
 .container-for-fourpart h4{
@@ -44,21 +44,28 @@ section{
     text-orientation: mixed;
     margin: 0;  
     border-radius: 30px;
+    padding: 2rem 0.2rem;
+    background-color: var(--dividerColorTree);
 }
 .foursection h3{
+    padding: 0.2rem 2rem;
+    border-radius: 20px;
     transform: rotate(90deg);
+    background-color: var(--dividerColorTree);
 }
 section h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    border:  0.2rem solid #7d9b76;  
+    background-color: var(--dividerColorTree);
 }
 .container-part h1{
     background-color: var(--dividerColorOne);
     padding: clamp(1rem, 2vh, 5rem);
     border-radius: 20px;
+
 }
 .twopart{
     grid-template-columns: 1fr 1fr;
-    border:  0.2rem solid #7d9b76;  
 }
