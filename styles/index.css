@@ -1,89 +1,64 @@
-main{
-    display: grid;
-    grid-template-rows: 2fr 7fr;
-}
-.first, .third{
-    background-color: var(--colornamelessorange);
-}
-.second, .fourth{
-    background-color: var(--colornamelesslavanta);
-}
-/**/
-.first{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body{
     font-family: 'inter';
-    
+    color: var(--textColor);
 }
-.firstColumnContainer{
+.container-part{
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: aliceblue;
-    width: clamp(1rem, 40vw, 50rem);
-    height: 5rem;
-    border-radius: 25px;
+    justify-content: center; 
 }
-
 /**/
-.second{
+.roadmap{
+    display: grid;  
+    grid-template-columns: 3fr 3fr 2fr 2fr 2fr;
+}
+section{
     display: grid;
-    grid-template-columns:3fr 3fr 2fr 2fr 2fr;
-}
-
-.FirstRow{
-    background-color: var(--dividerColorOne);
-}
-.SecondRow{
-    background-color: var(--dividerColorTree);
-}
-.ThirdRow{
-    background-color: var(--dividerColorTwo);
-}
-.FourthRow{
-    background-color: var(--dividerColorFour);
-}
-.FifthRow{
+    grid-template-rows: 1fr 5fr;
     background-color: var(--divideColorFive);
 }
-/**/
-.secondColumn{
+.box{
     display: grid;
-    grid-template-rows: 2fr 6fr;
 }
-.secondColumn h2{
+/**/
+.treepart{
+    grid-template-columns: 1fr 1fr 1fr;
+    border:  0.2rem solid #7d9b76;   
+}
+.treepartone{
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+}
+.container-for-fourpart{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    color: var(--textColor);
-    font-family: 'inter';
 }
-.secondColumn h3{
-    font-family: 'inter';
-    color: var(--textColor);
+.foursection{
+    align-items: center;
+    justify-content: center;
+}
+/**/
+.container-for-fourpart h4{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin: 0;  
+    border-radius: 30px;
+}
+.foursection h3{
     transform: rotate(90deg);
 }
-.barriersTreepart{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: darkgoldenrod;
-}
-.barriersTwopart{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: darkgoldenrod;
-}
-.barriersTreepart div{
-    border-right: 0.2rem solid black;
+section h2{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.barriersTwopart div{
-    border-right: 0.2rem solid black;
-        display: flex;
-    align-items: center;
-    justify-content: center;
+.container-part h1{
+    background-color: var(--dividerColorOne);
+    padding: clamp(1rem, 2vh, 5rem);
+    border-radius: 20px;
 }
-/**/
+.twopart{
+    grid-template-columns: 1fr 1fr;
+    border:  0.2rem solid #7d9b76;  
+}
