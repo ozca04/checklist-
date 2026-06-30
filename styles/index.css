@@ -3,22 +3,91 @@ main{
     gap: 1rem;
     flex-wrap: wrap;
     padding: 5rem;
+    font-family: 'inter';  
+    background-image: url('assets/background.jpg');
 }
 section{
     flex: 1 1 30%;
 }
+/**/
+/**/
 .front-end, .back-end, .tooling{
     background-color: var(--dividerColorTwo);
     display: flex;
-    justify-content: center;
-    align-items: start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     padding-top: 1rem;
+    flex: 1 1 30%;
+    padding-bottom: clamp(2rem, 5vh, 5rem);
 }
+.front-end h2, .back-end h2, .tooling h2{
+    padding: 1rem 0 2rem 0;
+}
+.front-end div, .back-end div, .tooling div{
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.front-end li, .back-end li, .tooling li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colornamelessdarkgreen);
+    width: 7rem;
+    height: 7rem;
+    list-style: none;
+    flex-shrink: 0;
+box-shadow: 0 2px 8px rgba(0,0,0,0.2)
+}
+.front-end li:hover, .back-end li:hover, .tooling li:hover{
+    background-color: color-mix(in oklch, var(--colornamelessdarkgreen), black 10%);
+    transform: translateY(-10px)
+}
+.front-end li a, .back-end li a, .tooling li a{
+    text-decoration: none;
+    color: var(--textColor);
+    text-align: center;
+}
+/**/
+/**/
 .devOps, .Security{
     background-color: var(--dividerColorTwo);
     display: flex;
-    justify-content: center;
-    align-items: start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     padding-top: 1rem;
-    
+    flex: 1 1 30%;
+    padding-bottom: clamp(2rem, 5vh, 5rem);
+}
+.devOps h2, .Security h2{
+    padding: 1rem 0 2rem 0;
+}
+.devOps div, .Security div{
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.devOps li, .Security li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colornamelessdarkgreen);
+    width: 7rem;
+    height: 7rem;
+    list-style: none;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2)
+}
+.devOps li:hover, .Security li:hover{
+    background-color: color-mix(in oklch, var(--colornamelessdarkgreen), black 10%);
+    transform: translatey(-10px)
+}
+.devOps li a, .Security li a{
+    text-decoration: none;
+    color: var(--textColor);
+    text-align: center;
 }
